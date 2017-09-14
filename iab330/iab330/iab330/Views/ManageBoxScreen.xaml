@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iab330.Views.ManageBoxScreen">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Grid BackgroundColor="SkyBlue">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Manage Boxes" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Grid.Column="0"
+                       TextColor="White"
+                       FontSize="30"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Button x:Name= "backButton" 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Back"
+                        FontSize="20"/>
+                <Button x:Name= "settingsButton" 
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="Settings"
+                        FontSize="20"/>
+            </Grid>
+            <StackLayout>
+                <Label Text="Add new boxes here:" />
+                <Entry x:Name="boxName"
+                       Placeholder="Enter Box Name Here" />
+                <Label Text="Room Type:" />
+                <Picker x:Name="roomType" Title="Select Room Type">
+                    <Picker.Items>
+                        <x:String>Bedroom</x:String>
+                        <x:String>Dining</x:String>
+                        <x:String>Living</x:String>
+                        <x:String>Storage</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button x:Name="submitBox" 
+                        WidthRequest="100"
+                        Text="Submit"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

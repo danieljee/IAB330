@@ -4,43 +4,69 @@
              x:Class="iab330.Views.HomePage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <Label Text="Where's My Stuff?" 
-                   TextColor="White"
-                   FontSize="30"
-                   BackgroundColor="Lime"
-                   WidthRequest="900"
-                   HeightRequest="100"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"/>
+            <Grid BackgroundColor="Lime">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Where's My Stuff?" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Grid.Column="0"
+                       TextColor="White"
+                       FontSize="30"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Button x:Name= "backButton" 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Back"
+                        FontSize="20"/>
+                <Button x:Name= "settingsButton" 
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Text="Settings"
+                        FontSize="20"/>
+            </Grid>
             <Button x:Name= "manageBoxesButton" 
                     Text="Manage Boxes"
                     FontSize="20"
-                    HeightRequest="125"
+                    HeightRequest="100"
                     WidthRequest="300"
                     Image="box_icon.png"
+                    BackgroundColor="SkyBlue"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"/>
             <Button x:Name= "addItemButton" 
                     Text="Quick Add/Remove Item"
                     FontSize="20"
-                    HeightRequest="125"
+                    BackgroundColor="Orange"
+                    Image="box_icon.png"
+                    HeightRequest="100"
                     WidthRequest="300"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"/>
             <Button x:Name= "searchButton" 
                     Text="Quick Search"
+                    Image="box_icon.png"
+                    BackgroundColor="Coral"
                     FontSize="20"
-                    HeightRequest="125"
+                    HeightRequest="100"
                     WidthRequest="300"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"/>
             <Button x:Name= "helpButton" 
                     Text="Help"
+                    Image="box_icon.png"
                     FontSize="20"
-                    HeightRequest="125"
+                    HeightRequest="100"
                     WidthRequest="300"
+                    BackgroundColor="IndianRed"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"/>
         </StackLayout>

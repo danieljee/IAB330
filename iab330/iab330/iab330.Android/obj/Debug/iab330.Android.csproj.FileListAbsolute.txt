@@ -52,3 +52,5 @@ C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\obj
 C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\obj\Debug\res\drawable\box_icon.png
+C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\bin\Debug\CodeMill.VMFirstNav.dll
+C:\Users\dtvn9\OneDrive\Documents\GitHub\IAB330\iab330\iab330\iab330.Android\bin\Debug\CodeMill.VMFirstNav.pdb

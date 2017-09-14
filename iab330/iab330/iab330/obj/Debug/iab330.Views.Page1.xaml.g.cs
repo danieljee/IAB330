@@ -11,13 +11,13 @@
 namespace iab330.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\admin\\Desktop\\2017 sem 2\\IAB330\\assignment\\iab330\\iab330\\iab330\\Views\\It" +
-        "emDetailPage.xaml")]
-    public partial class ItemDetailPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\dtvn9\\OneDrive\\Documents\\GitHub\\IAB330\\iab330\\iab330\\iab330\\Views\\Page1." +
+        "xaml")]
+    public partial class Page1 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ItemDetailPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
         }
     }
 }

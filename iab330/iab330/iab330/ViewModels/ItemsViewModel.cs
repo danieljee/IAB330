@@ -9,10 +9,11 @@ using iab330.Views;
 using Xamarin.Forms;
 
 namespace iab330.ViewModels {
+    /*
     public class ItemsViewModel : BaseViewModel {
         public ObservableRangeCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
-
+        
         public ItemsViewModel() {
             Title = "Browse";
             Items = new ObservableRangeCollection<Item>();
@@ -46,5 +47,5 @@ namespace iab330.ViewModels {
                 IsBusy = false;
             }
         }
-    }
+    }*/
 }
