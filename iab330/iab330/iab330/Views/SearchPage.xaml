@@ -1,50 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iab330.Views.SearchPage">
+             x:Class="iab330.Views.SearchPage"
+             Title="Search">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <Grid BackgroundColor="Coral">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="50" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="3*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="Search" 
-                       Grid.Row="0"
-                       Grid.ColumnSpan="3"
-                       Grid.Column="0"
-                       TextColor="White"
-                       FontSize="30"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
-                <Button x:Name= "backButton" 
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Text="Back"
-                        FontSize="20"/>
-                <Button x:Name= "settingsButton" 
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Text="Settings"
-                        FontSize="20"/>
-            </Grid>
-            <StackLayout>
-                <Picker x:Name="searchCriteria" Title="Search Criteria Seletion">
-                    <Picker.Items>
-                        <x:String>Room Type</x:String>
-                        <x:String>Box Name</x:String>
-                        <x:String>Item Name</x:String>
-                    </Picker.Items>
-                </Picker>
-                <Entry x:Name="searchName" Placeholder="Enter Text Here"/>
-                <Button x:Name="searchConfirm" Text="Search" />
-                <Label Text="Search Results:"/>
-            </StackLayout>
+            <Picker x:Name="searchCriteria" Title="Search Criteria Seletion">
+                <Picker.Items>
+                    <x:String>Room Type</x:String>
+                    <x:String>Box Name</x:String>
+                    <x:String>Item Name</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="searchName" Placeholder="Enter Text Here"/>
+            <Button x:Name="searchConfirm" Text="Search" />
+            <Label Text="Search Results:"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

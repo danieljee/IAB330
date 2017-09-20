@@ -1,38 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iab330.Views.HomePage">
+             x:Class="iab330.Views.HomePage"
+             Title="Where's My Stuff?">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-            <Grid BackgroundColor="Lime">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
-                    <RowDefinition Height="50" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="3*" />
-                    <ColumnDefinition Width="3*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="Where's My Stuff?" 
-                       Grid.Row="0"
-                       Grid.ColumnSpan="3"
-                       Grid.Column="0"
-                       TextColor="White"
-                       FontSize="30"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
-                <Button x:Name= "backButton" 
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Text="Back"
-                        FontSize="20"/>
-                <Button x:Name= "settingsButton" 
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Text="Settings"
-                        FontSize="20"/>
-            </Grid>
             <Button x:Name= "manageBoxesButton" 
                     Text="Manage Boxes"
                     FontSize="20"
@@ -41,7 +13,8 @@
                     Image="box_icon.png"
                     BackgroundColor="SkyBlue"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand" 
+                    Clicked="manageBoxesButton_Clicked"/>
             <Button x:Name= "addItemButton" 
                     Text="Quick Add/Remove Item"
                     FontSize="20"
@@ -50,7 +23,8 @@
                     HeightRequest="100"
                     WidthRequest="300"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="addItemButton_Clicked"/>
             <Button x:Name= "searchButton" 
                     Text="Quick Search"
                     Image="box_icon.png"
@@ -59,7 +33,8 @@
                     HeightRequest="100"
                     WidthRequest="300"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="searchButton_Clicked"/>
             <Button x:Name= "helpButton" 
                     Text="Help"
                     Image="box_icon.png"
@@ -68,7 +43,8 @@
                     WidthRequest="300"
                     BackgroundColor="IndianRed"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="helpButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,11 +8,17 @@ namespace iab330 {
     public partial class App : Application {
         public App() {
             InitializeComponent();
-            SetMainPage();
+            //SetMainPage();
+
+            this.MainPage = new NavigationPage(new HomePage())
+            {
+                BarBackgroundColor = Color.DarkGray,
+                BarTextColor = Color.White,
+            };
         }
 
         public static void SetMainPage() {
-            Current.MainPage = new SearchPage {
+            Current.MainPage = new HomePage {
 
             };
         }

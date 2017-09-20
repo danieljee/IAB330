@@ -16,5 +16,25 @@ namespace iab330.Views
         {
             InitializeComponent();
         }
+
+        private void manageBoxesButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ManageBoxScreen());
+        }
+
+        private void addItemButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new QuickAddPage());
+        }
+
+        private void searchButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SearchPage());
+        }
+
+        private void helpButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HelpScreen());
+        }
     }
 }
